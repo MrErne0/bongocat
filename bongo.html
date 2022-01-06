@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vongo Cat</title>
+	<link rel="icon" href="/png/bongcat2.png"/>	
+	<link rel="stylesheet" href="boton.css" />
+	<!--Una disculpa es lo mas que pude hacer, espero poder mejorarlo con mas tiempo-->
+<body>
+	<!--sonido1 bongo-->
+	<script> 
+		var sonido1 = new Audio();
+		sonido1.src="/sonidos/sounds_bongo0.mp3";
+
+		var sonido2 = new Audio();
+		sonido2.src="/sonidos/sounds_bongo1.mp3";
+
+		var sonido3 = new Audio();
+		sonido3.src="/sonidos/sounds_cowbell.mp3";
+		
+		var sonido4 = new Audio();
+		sonido4.src="/sonidos/sounds_keyboard0.mp3";
+
+		var sonido5 = new Audio();
+		sonido5.src="/sonidos/sounds_keyboard1.mp3";
+
+		var sonido6 = new Audio();
+		sonido6.src="/sonidos/sounds_meow.mp3";
+	</script>
+
+	<div class="button" id="A" onmousedown="sonido1.play()" style="width:60px; height:100px;">A</div>
+	<div class="button" id="D" onmousedown="sonido2.play()" style="width:60px; height:100px;">D</div>
+	<div class="button" id="C" onmousedown="sonido3.play()" style="width:60px; height:100px;">C</div>
+	<div class="button" id="F" onmousedown="sonido4.play()" style="width:60px; height:100px;">F</div>
+	<div class="button" id="B" onmousedown="sonido5.play()" style="width:60px; height:100px;">B</div>
+	<div class="button" id="Space" onmousedown="sonido6.play()" style="width:180px; height:100px;">SPACE</div> 
+	
+	<div align="center"><img src="/png/boncat.png" id="gato" onmousedown="sonido1.play()"/></div>
+	</body>
+</html>
